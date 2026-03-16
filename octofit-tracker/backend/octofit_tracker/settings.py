@@ -85,8 +85,8 @@ DATABASES = {
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb://localhost:27017',
-            'username': '',
-            'password': '',
+            'username': 'mongo_user',
+            'password': 'mongo_pass',
             'authSource': 'admin',
             'authMechanism': 'SCRAM-SHA-1',
         },
