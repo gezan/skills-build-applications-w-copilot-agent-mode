@@ -1,0 +1,54 @@
+body {
+  background-color: #f0f2f5;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: #fff !important;
+  border-bottom: 2px solid #fff;
+}
+
+/* Page cards wrapping each component */
+.page-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.09);
+}
+
+.page-card > .card-header {
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 10px 10px 0 0 !important;
+  padding: 0.85rem 1.25rem;
+}
+
+.page-card > .card-header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Tables */
+.table th {
+  white-space: nowrap;
+}
+
+/* Hero section on home page */
+.hero-section {
+  background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 3.5rem 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
