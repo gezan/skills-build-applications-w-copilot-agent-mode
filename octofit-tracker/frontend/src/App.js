@@ -12,7 +12,10 @@ function App() {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container">
-            <NavLink className="navbar-brand" to="/">OctoFit Tracker</NavLink>
+            <NavLink className="navbar-brand" to="/">
+              <img src={`${process.env.PUBLIC_URL}/octofitapp-small.png`} alt="OctoFit logo" />
+              OctoFit Tracker
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
