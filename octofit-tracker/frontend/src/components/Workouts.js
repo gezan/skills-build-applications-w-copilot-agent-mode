@@ -5,10 +5,7 @@ function Workouts() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiBase = process.env.REACT_APP_CODESPACE_NAME
-    ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev`
-    : 'http://localhost:8000';
-  const apiUrl = `${apiBase}/api/workouts/`;
+  const apiUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/workouts/`;
 
   useEffect(() => {
     console.log('Workouts: fetching from REST API endpoint:', apiUrl);

@@ -5,10 +5,7 @@ function Leaderboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const apiBase = process.env.REACT_APP_CODESPACE_NAME
-    ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev`
-    : 'http://localhost:8000';
-  const apiUrl = `${apiBase}/api/leaderboard/`;
+  const apiUrl = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/leaderboard/`;
 
   useEffect(() => {
     console.log('Leaderboard: fetching from REST API endpoint:', apiUrl);
